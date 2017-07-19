@@ -21,6 +21,7 @@
   "homepage": "https://github.com/3dw1nM0535/Timestamp-Microservice#readme",
   "dependencies": {
     "body-parser": "^1.17.2",
-    "express": "^4.15.3"
+    "express": "^4.15.3",
+    "http": "0.0.0"
   }
 }
