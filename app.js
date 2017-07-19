@@ -1,9 +1,13 @@
-var http = require('http');
+var express = require('express');
 
-var server = http.createServer((res, req) => {
-  res.writeHead(200, {"Content-Type": "text/plain"});
-  res.end("Hello world");
+var app = express();
+
+app.get("/", (req, res) => {
+  res.send("This is the homepage!");
 });
 
-server.listen(3000, "127.0.0.1");
-console.log("Server listening on port 3000...");
+app.get("/error", (req, res) => {
+  res.send("This is the Error page!");
+})
+
+app.listen(3000);
