@@ -1,0 +1,22 @@
+{
+  "name": "timestamp-microservice",
+  "version": "1.0.0",
+  "description": "Timestamp Microservice API",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3dw1nM0535/Timestamp-Microservice.git"
+  },
+  "keywords": [
+    "API"
+  ],
+  "author": "Edwin Moses",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/3dw1nM0535/Timestamp-Microservice/issues"
+  },
+  "homepage": "https://github.com/3dw1nM0535/Timestamp-Microservice#readme"
+}
