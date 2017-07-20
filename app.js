@@ -10,6 +10,11 @@ app.set('view engine', 'ejs');
 app.use(express.static('Public'));
 
 app.get('/', (req, res) => {
+  res.render('index');
+});
+
+app.get('/:id', (req, res) => {
+  console.log(req.params.id);
   res.send("Timestamp Microservice API");
 });
 
