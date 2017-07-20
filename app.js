@@ -14,8 +14,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/:id', (req, res) => {
-  console.log(req.params.id);
-  res.send("Timestamp Microservice API");
+  res.send(req.params.id);
 });
 
 app.listen(3000, '127.0.0.1', () => {
