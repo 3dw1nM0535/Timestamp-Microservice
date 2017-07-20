@@ -24,7 +24,7 @@ app.get('/:date', (req, res) => {
   if(isNaN(time)) {
     res.send({ "unix": null, "natural": null });
   } else {
-    res.send({ "unix": time/1000, "natural": strftime('%B %D %y', new Date(time))});
+    res.send({ "unix": time/1000, "natural": new Date(time).toDateString()});
   }
 });
 
