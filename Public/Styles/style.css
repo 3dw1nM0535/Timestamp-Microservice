@@ -16,3 +16,8 @@ ol {
 li {
   padding: 0.50rem;
 }
+
+.footer {
+  margin-top: 5rem;
+  font-size: 1rem;
+}
