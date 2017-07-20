@@ -1,5 +1,4 @@
 var express = require('express');
-var strftime = require('strftime');
 
 var app = express();
 
