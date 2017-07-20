@@ -1,4 +1,5 @@
 var express = require('express');
+var strftime = require('strftime');
 
 var app = express();
 
@@ -17,6 +18,13 @@ app.get('/:date', (req, res) => {
   var num = Number(req.params.date);
   if (isNaN(num)) {
     var time = Date.parse(req.params.date);
+  } else {
+    var time = new Date(num * 1000);
+  }
+  if(isNaN(time)) {
+    res.send({ "unix": null, "natural": null });
+  } else {
+    res.send({ "unix": time/1000, "natural": strftime('%B %D %y', new Date(time))});
   }
 });
 
