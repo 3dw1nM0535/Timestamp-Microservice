@@ -8,3 +8,11 @@ body {
   background-color: crimson ! important;
   color: white ! important;
 }
+
+ol {
+  margin-left: 5rem;
+}
+
+li {
+  padding: 0.50rem;
+}
