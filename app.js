@@ -13,8 +13,11 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
-app.get('/:id', (req, res) => {
-  res.send(req.params.id);
+app.get('/:date', (req, res) => {
+  var num = Number(req.params.date);
+  if (isNaN(num)) {
+    var time = Date.parse(req.params.date);
+  }
 });
 
 app.listen(3000, '127.0.0.1', () => {
